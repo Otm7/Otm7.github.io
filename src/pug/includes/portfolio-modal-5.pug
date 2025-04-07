@@ -1,0 +1,26 @@
+// Portfolio Modal 5
+#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal5', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 TaskMaster
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/checklist.jpg", alt='checklist')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | TaskMaster est une application web de gestion de tâches et de projets qui permet aux utilisateurs de créer, organiser et suivre leurs tâches de manière efficace. En plus des fonctionnalités basiques, elle permet à plusieurs utilisateurs de collaborer, attribuer des tâches et suivre l'avancement de projets communs.
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Fermer la fenêtre

@@ -1,0 +1,26 @@
+// Portfolio Modal 6
+#portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal6', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Chatbot Discord
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/chatbot.avif", alt='chatbot')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Conception d’un chatbot fonctionnel pour Discord, intégrant des commandes personnalisées, une gestion des rôles et permissions, ainsi que des réponses automatisées. Le bot est pensé pour améliorer l'expérience communautaire et simplifier la modération.
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Fermer la fenêtre

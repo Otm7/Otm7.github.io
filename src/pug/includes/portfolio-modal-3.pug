@@ -1,0 +1,26 @@
+// Portfolio Modal 3
+#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal3', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Codeigniter
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/codeigniteer.jpg", alt="codeigniteer")
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Mon projet de Codeigniter est un site web développé avec le framework PHP CodeIgniter. Pour ce projet je me suis occupé de la partie de la réservation de séjours en ligne pour des particuliers dans laquelle ils peuvent réserver leurs horaires de départ et d'arrivées ainsi que le nombre de personnes qui vont partir en vacances. J'ai également mis en place un système de paiement en ligne sécurisé pour les utilisateurs afin qu'ils puissent payer leurs réservations en toute sécurité.
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Fermer la fenêtre

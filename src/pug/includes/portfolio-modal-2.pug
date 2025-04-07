@@ -1,0 +1,26 @@
+// Portfolio Modal 2
+#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal2', aria-hidden='true')
+    .modal-dialog.modal-xl
+        .modal-content
+            .modal-header.border-0
+                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5
+                .container
+                    .row.justify-content-center
+                        .col-lg-8
+                            // Portfolio Modal - Title
+                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Site e-commerce de vente en ligne de vêtements
+                            // Icon Divider
+                            .divider-custom
+                                .divider-custom-line
+                                .divider-custom-icon
+                                    i.fas.fa-star
+                                .divider-custom-line
+                            // Portfolio Modal - Image
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/ec.png", alt='ec')
+                            // Portfolio Modal - Text
+                            p.mb-4
+                                | Durant mon stage de 2ème année j'ai développé un site e-commerce en groupe dans lequel j'ai été responsable du coté front et backend de la plateforme et où j'ai pu développer la partie authentification de l'utilisateur pour le côté inscription/connexion et ainsi j'ai pu également gérer la sécurité au niveau des tokens en imposant aussi la quantité de caractères pour un mot de passe en mettant une barre de progression et également mis en place une page de politique de confidentialité & mentions légales pour la plateforme du site e-commerce.
+                            button.btn.btn-primary(data-bs-dismiss='modal')
+                                i.fas.fa-xmark.fa-fw
+                                | Fermer la fenêtre

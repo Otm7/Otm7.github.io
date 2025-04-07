@@ -1,17 +1,16 @@
-doctype html
+doctype html 
 html(lang='en')
 
     head
-
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Freelancer - Start Bootstrap Theme
+        title Othman DOHO - Portfolio
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href="assets/logo-URL.png")
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -28,20 +27,26 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Othman DOHO
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') À propos de moi
                         li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills') Mes compétences   <!-- Ajouté ici -->
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Projets
+                        li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#others') Autres 
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#rss-feed') Veille Techno
+                        
+                        
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
@@ -49,7 +54,7 @@ html(lang='en')
                 // Masthead Avatar Image
                 img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Othman DOHO 
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -57,13 +62,86 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Développeur d'applications et logiciels 
 
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+                // About Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white À propos de moi
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // About Section Content
+                .row
+                    .col-lg-4.ms-auto
+                        p.lead
+                            |    Salut, je m'appelle Othman DOHO, je suis actuellement étudiant en BTS SIO option SLAM. Passionné par l'informatique et le développement. J'aime concevoir des applications web et mobiles, automatiser des tâches et explorer les dernières technologies du développement.
+                    .col-lg-4.me-auto
+                        p.lead
+                            | Mon objectif : Je souhaite évoluer dans le domaine du développement logiciel et web, en alliant performance et sécurité. Toujours curieux d'apprendre, j'aime relever des défis techniques et proposer des solutions innovantes.
+
+        section#skills.page-section.bg-light.text-dark
+        .container
+            // Compétences Section Heading
+            h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Mes compétences
+            // Icon Divider
+            .divider-custom
+                .divider-custom-line
+                .divider-custom-icon
+                    i.fas.fa-cogs
+                .divider-custom-line
+
+            // Ici commence le slider
+            .slider
+                .skill-item
+                    i.fab.fa-js
+                    h5 JavaScript
+                .skill-item
+                    i.fab.fa-java
+                    h5 Java
+                .skill-item
+                    .diamond C#
+                    h5 C#
+                .skill-item
+                    i.fas.fa-database
+                    h5 MySQL
+                .skill-item
+                    <i class="fa-brands fa-php"></i>
+                    h5 PHP
+                .skill-item
+                    <i class="fa-brands fa-linux"></i>
+                    h5 Linux 
+                .skill-item
+                    <i class="fa-brands fa-html5"></i>
+                    h5 HTML 
+                .skill-item
+                    <i class="fa-brands fa-css3-alt"></i>
+                    H5 CSS
+                .skill-item
+                    <i class="fa-brands fa-python"></i>
+                    h5 Python
+                .skill-item
+                    <i class="fa-brands fa-git-alt"></i>
+                    h5 Git
+                .skill-item
+                    <i class="fa-solid fa-shield-halved"></i>
+                    h5 RGPD & CNIL
+                .skill-item
+                    <img src="https://cdn.simpleicons.org/postman/0B1420" alt="Postman logo" width="85" height="85">
+                    h5 Postman
+                   
+
+
+                    
+        
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Projets
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -78,73 +156,79 @@ html(lang='en')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/visuel-fonctionnlite-gpao.png', alt='Illustration GPAO')
                     // Portfolio Item 2
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/ec.png", alt='ec')
                     // Portfolio Item 3
                     .col-md-6.col-lg-4.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/codeigniteer.jpg", alt="codeigniteer")
                     // Portfolio Item 4
                     .col-md-6.col-lg-4.mb-5.mb-lg-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/games.png", alt='games')
                     // Portfolio Item 5
                     .col-md-6.col-lg-4.mb-5.mb-md-0
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/checklist.jpg", alt='checklist')
                     // Portfolio Item 6
                     .col-md-6.col-lg-4
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
-
-        // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
+                            img.img-fluid.rounded.mb-5(src="assets/img/portfolio/chatbot.avif", alt='chatbot')
+                            
+        section#others.page-section.bg-light.text-dark
             .container
-                // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
-                // Icon Divider
-                .divider-custom.divider-light
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Autres
+                .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                // About Section Content
                 .row
-                    .col-lg-4.ms-auto
-                        p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='#')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                    .col-lg-12
+                        h4 Diplômes & Certifications
+                        ul
+                            li | Bac STI2D option (SIN) Systèmes d'Informations Numériques
+                            li | BTS SIO option SLAM en cours
+                            li | Certifié PIX 
+                            li | Brevet de secourisme (PSC1)
+                    .col-lg-12.mt-4
+                        h4 Langues
+                        ul
+                            li | Français : Langue maternelle
+                            li | Anglais : Niveau intermédiaire (B2)
+                            li | Espagnol : Niveau intermédiaire (B1)
+                    .col-lg-12.mt-4
+                        h4 Centres d'intérêts
+                        ul
+                            li | Sports
+                            li | Jeux vidéos
+                            li | Développement web & mobile
+                            li | Lecture Mangas et Comics
+                            li | Voyages
 
         // Contact Section
         section#contact.page-section
             .container
                 // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contactez-moi
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -164,9 +248,9 @@ html(lang='en')
                                     placeholder='Enter your name...',
                                     data-sb-validations='required'
                                 )
-                                label(for='name') Full name
+                                label(for='name') Nom complet
                                 .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
+                                    | Un nom est requis.
 
                             // Email address input
                             .form-floating.mb-3
@@ -175,11 +259,11 @@ html(lang='en')
                                     placeholder='name@example.com',
                                     data-sb-validations='required,email'
                                 )
-                                label(for='email') Email address
+                                label(for='email') Adresse e-mail
                                 .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
+                                    | Une adresse e-mail est requis.
                                 .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                                    | l'email n'est pas valide.
 
                             // Phone number input
                             .form-floating.mb-3
@@ -188,9 +272,9 @@ html(lang='en')
                                     placeholder='(123) 456-7890',
                                     data-sb-validations='required'
                                 )
-                                label(for='phone') Phone number
+                                label(for='phone') Numéro de téléphone
                                 .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
+                                    | Un numéro de téléphone est requis.
 
                             // Message input
                             .form-floating.mb-3
@@ -202,35 +286,34 @@ html(lang='en')
                                 )
                                 label(for='message') Message
                                 .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
+                                    | Un message est requis.
 
                             // Submit success message
-                            //
+                            
                             // This is what your users will see when the form
                             // has successfully submitted
 
                             #submitSuccessMessage.d-none
                                 .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
+                                    .fw-bolder Soumission du formulaire réussie ! Pour activer ce formulaire, inscrivez-vous 
                                     br
                                     a(href='#')
 
                             // Submit error message
-                            //
+                            
                             // This is what your users will see when there is
                             // an error submitting the form
 
                             #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
+                                .text-center.text-danger.mb-3 Erreur d'envoie du message!
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Envoyer
 
         // RSS Feed Section
         section#rss-feed.page-section
             .container
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Latest Articles
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Veille technologique
                 .divider-custom
                     .divider-custom-line
                     .divider-custom-icon
@@ -238,7 +321,7 @@ html(lang='en')
                     .divider-custom-line
                 .row.justify-content-center
                     #rss-feed-container.col-lg-8
-                        p.text-muted.text-center Loading articles...
+                        p.text-muted.text-center Chargement des articles...
 
         // Footer
         footer.footer.text-center
@@ -247,9 +330,9 @@ html(lang='en')
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Où me joindre ?
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://github.com/Otm7' target='_blank')
                             i.fab.fa-fw.fa-github
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.linkedin.com/in/othmandoho/' target='_blank')
                             i.fab.fa-fw.fa-linkedin-in
 
         // Copyright Section
